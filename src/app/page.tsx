@@ -157,7 +157,7 @@ export default function Home() {
         </div>
 
         {/* 오른쪽 */}
-        <div className="flex-1 flex flex-col gap-4 h-[calc(100vh-80px)]">
+        <div className="flex-1 flex flex-col gap-4 ">
           {/* 리스트 */}
           {restaurantList.length > 0 && (
             <div className="flex-1 overflow-y-auto flex flex-col gap-3 pr-1">

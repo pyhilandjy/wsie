@@ -30,8 +30,8 @@ export function ThemeToggle() {
           transition-all duration-500 shadow-inner
           ${
             isDark
-              ? "bg-gradient-to-r from-[#0f172a] via-[#1e1b4b] to-[#020617]"
-              : "bg-gradient-to-r from-[#87CEEB] via-[#bae6fd] to-[#e0f2fe]"
+              ? "bg-linear-to-r from-[#0f172a] via-[#1e1b4b] to-[#020617]"
+              : "bg-linear-to-r from-[#87CEEB] via-[#bae6fd] to-[#e0f2fe]"
           }
         `}
       >

@@ -1,6 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { KakaoPlace } from "@/_types/kakao";
+import { Button } from "@/components/ui/button";
+
+const handleOnClick = async (place_url: string) => {
+  window.open(place_url, "_blank", "width=600,height=800,noopener,noreferrer");
+};
 
 export function ListCard({ place }: { place: KakaoPlace }) {
   return (
@@ -32,6 +37,15 @@ export function ListCard({ place }: { place: KakaoPlace }) {
             <Badge variant="secondary">혼밥 OK</Badge>
             <Badge variant="secondary">조용함</Badge>
           </div>
+        </div>
+        <div className="flex gap-2 mt-2">
+          <Button
+            variant="outline"
+            className="rounded-xl"
+            onClick={() => handleOnClick(place.place_url)}
+          >
+            상세
+          </Button>
         </div>
       </CardContent>
     </Card>
